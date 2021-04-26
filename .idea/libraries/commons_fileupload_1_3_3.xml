@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="commons-fileupload-1.3.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/commons-fileupload-1.3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-io-2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jstl-1.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jstl-api-1.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/sendgrid-java.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/sendgrid-java-4.7.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

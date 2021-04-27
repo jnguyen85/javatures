@@ -1,15 +1,16 @@
 package org.revature.service;
 
-import org.revature.dao.Impl.EmployeeDaoImpl;
-import org.revature.dao.Impl.RoleDaoImpl;
-import org.revature.model.Employee;
-import org.revature.model.Role;
+import java.sql.Connection;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.sql.Connection;
-import java.util.List;
+
+import org.revature.dao.Impl.EmployeeDaoImpl;
+import org.revature.dao.Impl.RoleDaoImpl;
+import org.revature.model.Employee;
+import org.revature.model.Role;
 
 public class EmployeeService {
 	private EmployeeDaoImpl employeeDaoImpl;

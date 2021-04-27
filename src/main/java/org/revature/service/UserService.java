@@ -1,13 +1,12 @@
 package org.revature.service;
 
-import java.sql.Connection;
-
+import org.revature.dao.Impl.RegisterDaoImpl;
+import org.revature.model.User;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.revature.dao.Impl.RegisterDaoImpl;
-import org.revature.model.User;
+import java.sql.Connection;
 
 public class UserService {
 	private RegisterDaoImpl registerDaoImpl;

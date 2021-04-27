@@ -21,18 +21,20 @@
 					src="ImageControllerServlet?ticketId=${THE_REIMBURSEMENT.ticketId}" 
 					alt="${reimbursement.fileName}" 
 					class="img-thumbnail"
-					width="250"
-					height="150">
+					width="350"
+					height="250">
 			 	
 			 </div>
-			 
-			 <div class="form-group">
+
+			<div class="form-group">
 				<label for="description">Description of Reimbursement</label>
-			   	<textarea  class="form-control" id="description" name="description" rows="4" cols="50">
-			   		${THE_REIMBURSEMENT.description}
-			   	</textarea>	
+				<input
+						type="text"
+						class="form-control" id="description"
+						name="description"
+						value="${THE_REIMBURSEMENT.description}">
 			</div>
-			 
+
 			<div class="form-group">
 				<label for="image">Click here to update current image</label>
 			   	<input type="file" class="form-control" id="image" name="image" >

@@ -39,7 +39,7 @@
 					
 					<!-- set up a link for each reimbursement TO DELETE-->
 					<c:url var="deleteLink" value="ReimbursementControllerServlet">
-						<c:param name="command" value="DELETE" />
+						<c:param name="command" value="DELETE_REIMBURSEMENT" />
 						<c:param name="ticketId" value="${reimbursement.ticketId }" />
 					</c:url>
 					

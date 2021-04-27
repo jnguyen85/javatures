@@ -1,19 +1,18 @@
 package org.revature.servlet;
 
-import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.revature.service.ReimbursementService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.revature.service.ReimbursementService;
-
-import org.apache.log4j.*;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 
 @WebServlet("/UpdateReimControllerServlet")

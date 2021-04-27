@@ -15,12 +15,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.log4j.*;
-
 @WebServlet("/ImageControllerServlet")
 public class ImageControllerServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private static final Logger log = LogManager.getLogger(ImageControllerServlet.class);
+
 	
 	private Connection connection;
     
@@ -58,7 +56,7 @@ public class ImageControllerServlet extends HttpServlet {
 				os.write(byteArray);
 				os.flush();
 				os.close();
-				log.info("images sucessfull upload to <img> tag.");
+
 			} else {
 				System.out.println("No image found with this id");
 			}

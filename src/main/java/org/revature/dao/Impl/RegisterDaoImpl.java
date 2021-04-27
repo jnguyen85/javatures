@@ -1,12 +1,12 @@
 package org.revature.dao.Impl;
 
+import org.revature.dao.RegisterDao;
+import org.revature.model.User;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
-
-import org.revature.dao.RegisterDao;
-import org.revature.model.User;
 
 public class RegisterDaoImpl implements RegisterDao {
 	private Connection connection;

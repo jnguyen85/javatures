@@ -1,16 +1,16 @@
 package org.revature.servlet;
 
-import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import org.revature.service.ReimbursementService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.revature.service.ReimbursementService;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 @WebServlet("/ReimbursementControllerServlet")
 public class ReimbursementControllerServlet extends HttpServlet {
@@ -63,6 +63,7 @@ public class ReimbursementControllerServlet extends HttpServlet {
 					reimbursementService.updateReimbursement(request, response);
 					break;
 				case "DELETE_REIMBURSEMENT":
+					System.out.println("Inside servlet delete");
 					reimbursementService.deleteReimbursement(request, response);
 					break;
 				default:

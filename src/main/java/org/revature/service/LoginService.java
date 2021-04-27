@@ -1,16 +1,15 @@
 package org.revature.service;
 
-import java.sql.Connection;
+import org.revature.dao.Impl.EmployeeDaoImpl;
+import org.revature.dao.Impl.LoginImpl;
+import org.revature.model.Employee;
+import org.revature.model.Login;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-import org.revature.dao.Impl.EmployeeDaoImpl;
-import org.revature.dao.Impl.LoginImpl;
-import org.revature.model.Employee;
-import org.revature.model.Login;
+import java.sql.Connection;
 
 public class LoginService {
 	private LoginImpl loginImpl;

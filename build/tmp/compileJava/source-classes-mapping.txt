@@ -34,17 +34,19 @@ org/revature/service/UserService.java
  org.revature.service.UserService
 org/revature/servlet/LogoutControllerServlet.java
  org.revature.servlet.LogoutControllerServlet
-org/revature/service/ReimbursementService.java
- org.revature.service.ReimbursementService
-org/revature/model/Reimbursement.java
- org.revature.model.Reimbursement
-org/revature/dao/ReimbursementDao.java
- org.revature.dao.ReimbursementDao
-org/revature/servlet/LoginServlet.java
- org.revature.servlet.LoginServlet
-org/revature/servlet/ReimbursementControllerServlet.java
- org.revature.servlet.ReimbursementControllerServlet
 org/revature/dao/Impl/RegisterDaoImpl.java
  org.revature.dao.Impl.RegisterDaoImpl
+org/revature/model/Reimbursement.java
+ org.revature.model.Reimbursement
+org/revature/servlet/LoginServlet.java
+ org.revature.servlet.LoginServlet
+org/revature/dao/ReimbursementDao.java
+ org.revature.dao.ReimbursementDao
+org/revature/service/ReimbursementService.java
+ org.revature.service.ReimbursementService
+org/revature/servlet/ReimbursementControllerServlet.java
+ org.revature.servlet.ReimbursementControllerServlet
+org/revature/servlet/UpdateReimControllerServlet.java
+ org.revature.servlet.UpdateReimControllerServlet
 org/revature/dao/Impl/ReimbursementDaoImpl.java
  org.revature.dao.Impl.ReimbursementDaoImpl

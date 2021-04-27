@@ -1,14 +1,14 @@
 package org.revature.dao.Impl;
 
+import org.revature.dao.ReimbursementDao;
+import org.revature.model.Reimbursement;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.revature.dao.ReimbursementDao;
-import org.revature.model.Reimbursement;
 
 public class ReimbursementDaoImpl implements ReimbursementDao {
 	private Connection connection;
@@ -48,7 +48,23 @@ public class ReimbursementDaoImpl implements ReimbursementDao {
 		}
 		
 	}
-	
+
+	@Override
+	public void deleteReimbursement(String ticketId) throws Exception {
+		PreparedStatement myStmt = null;
+		try {
+			String sql = "DELETE FROM reimbursement WHERE ticketId=? ";
+			myStmt = connection.prepareStatement(sql);
+			int Id = Integer.parseInt(ticketId);
+			System.out.println("Inside delete dao tickeId: " + Id);
+			myStmt.setInt(1, Id);
+			myStmt.execute();
+		}
+		finally {
+			close(connection, myStmt, null);
+		}
+	}
+
 	private void close(Connection conn, Statement stmt, ResultSet rs) {
 		try {
 			
